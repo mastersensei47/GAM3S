@@ -69,7 +69,7 @@ main{
   margin-right:auto;
 }
 
-/* ===== HERO SECCIÓN ===== */
+/* ===== HERO ===== */
 .hero{
   display:flex;
   align-items:center;
@@ -130,14 +130,52 @@ main{
   background:#ff0000;
 }
 
-/* ===== INFO ===== */
-.info{
-  margin-top:50px;
-  line-height:1.6;
-  text-align:center;
+/* ===== INFO MEJORADA ===== */
+.info-juego{
+  margin-top:60px;
   max-width:900px;
   margin-left:auto;
   margin-right:auto;
+  text-align:left;
+  line-height:1.7;
+}
+
+.info-juego h2{
+  font-size:26px;
+  margin-bottom:20px;
+  border-bottom:2px solid #222;
+  padding-bottom:8px;
+}
+
+.nota{
+  text-align:center;
+  font-size:16px;
+  border:none;
+  margin-bottom:40px;
+  color:#bbb;
+}
+
+.requisitos, .info-list{
+  list-style:none;
+  padding:0;
+}
+
+.requisitos li, .info-list li{
+  margin-bottom:12px;
+  font-size:15px;
+}
+
+.check{
+  color:#4caf50;
+  margin-right:8px;
+  font-weight:bold;
+}
+
+hr{
+  border:none;
+  height:1px;
+  background:#222;
+  margin:40px 0;
 }
 
 /* ===== GALERÍA ===== */
@@ -188,18 +226,15 @@ main{
 <!-- HERO -->
 <section class="hero">
 
-  <!-- VIDEO IZQUIERDA -->
   <div class="video">
     <iframe src="https://www.youtube.com/embed/1kcAvsdoA38" allowfullscreen></iframe>
   </div>
 
-  <!-- TITULO CENTRO -->
   <div class="titulo">
     <h1>DRAGON BALL Sparking! ZERO</h1>
-    <p>↤ mas juegos ➟</p>
+    <p>↤ más juegos ➟</p>
   </div>
 
-  <!-- VIDEO DERECHA -->
   <div class="video">
     <iframe src="https://www.youtube.com/embed/IACXdUo7QLw" allowfullscreen></iframe>
   </div>
@@ -208,33 +243,40 @@ main{
 
 <!-- PARTES -->
 <section class="partes">
-  <h2>PESO TOTAL 28 GB(COMPRIMIDO)</h2>
-  <a href="https://www.mediafire.com/file/xfpqyn4s5rnd8dc/DRAGON+BALL+Sparking!+ZERO.7z.001/file">Parte 1</a>
-  <a href="https://www.mediafire.com/file/s9ta0ehtmfajq38/DRAGON_BALL_Sparking%21_ZERO.7z.002/file">Parte 2</a>
-  <a href="https://www.mediafire.com/file/70f95w8sv1yobis/DRAGON+BALL+Sparking!+ZERO.7z.003/file">Parte 3</a>
-  <a href="https://www.mediafire.com/file/h3bl4cri79sxt4n/DRAGON+BALL+Sparking!+ZERO.7z.004/file">Parte 4</a>
-
+  <h2>PESO TOTAL 28 GB (COMPRIMIDO)</h2>
+  <a href="#">Parte 1</a>
+  <a href="#">Parte 2</a>
+  <a href="#">Parte 3</a>
+  <a href="#">Parte 4</a>
 </section>
 
 <!-- INFO -->
-<section class="info">
-<h2>(COLOCAR TODAS LAS PARTES EN UNA CARPETA Y DESCOMPRIMIR SOLO 1 PARTE)</h2>
-  
-   <h2>REQUISITOS DEL SISTEMA
-Sistema operativo : Windows 10
-Procesador : Intel Core i5-9600K / AMD Ryzen 5 2600
-Memoria : 8 GB de RAM
-Gráficos : Nvidia GeForce GTX 980 / AMD Radeon RX 590 / Intel Arc A750
-DirectX : Versión 12
-Almacenamiento:60 GB TEMPORALES- 29 GB UNA VEZ BORRADA LAS PARTES
+<section class="info-juego">
 
-  <p>INFORMACIÓN DEL JUEGO
+<h2 class="nota">(COLOCAR TODAS LAS PARTES EN UNA CARPETA Y DESCOMPRIMIR SOLO 1 PARTE)</h2>
 
-Género: Acción
+<h2>REQUISITOS DEL SISTEMA</h2>
 
-Plataforma: PC
+<ul class="requisitos">
+<li><span class="check">✔</span> <strong>Sistema operativo:</strong> Windows 10</li>
+<li><span class="check">✔</span> <strong>Procesador:</strong> Intel Core i5-9600K / AMD Ryzen 5 2600</li>
+<li><span class="check">✔</span> <strong>Memoria:</strong> 8 GB de RAM</li>
+<li><span class="check">✔</span> <strong>Gráficos:</strong> Nvidia GeForce GTX 980 / AMD Radeon RX 590 / Intel Arc A750</li>
+<li><span class="check">✔</span> <strong>DirectX:</strong> Versión 12</li>
+<li><span class="check">✔</span> <strong>Almacenamiento:</strong> 60 GB temporales - 29 GB final</li>
+</ul>
 
-Versión : v2014.013.003.009.008 | Versión completa + Multijugador</p>
+<hr>
+
+<h2>INFORMACIÓN DEL JUEGO</h2>
+
+<ul class="info-list">
+<li><strong>Género:</strong> Acción</li>
+<li><strong>Plataforma:</strong> PC</li>
+<li><strong>Versión:</strong> v2014.013.003.009.008</li>
+<li><strong>Edición:</strong> Completa + Multijugador</li>
+</ul>
+
 </section>
 
 <!-- GALERÍA -->
@@ -248,11 +290,3 @@ Versión : v2014.013.003.009.008 | Versión completa + Multijugador</p>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
