@@ -96,6 +96,20 @@ main{
   min-width:250px;
 }
 
+.video-top{
+  margin-bottom:25px;
+  display:flex;
+  justify-content:center;
+}
+
+.video-top iframe{
+  width:100%;
+  max-width:600px;
+  height:340px;
+  border-radius:14px;
+  box-shadow:0 0 25px rgba(255,0,0,0.4);
+}
+
 .titulo h1{
   font-size:34px;
   margin-bottom:10px;
@@ -130,7 +144,7 @@ main{
   background:#ff0000;
 }
 
-/* ===== INFO MEJORADA ===== */
+/* ===== INFO ===== */
 .info-juego{
   margin-top:60px;
   max-width:900px;
@@ -226,15 +240,25 @@ hr{
 <!-- HERO -->
 <section class="hero">
 
+  <!-- VIDEO IZQUIERDO -->
   <div class="video">
     <iframe src="https://www.youtube.com/embed/1kcAvsdoA38" allowfullscreen></iframe>
   </div>
 
+  <!-- CENTRO -->
   <div class="titulo">
+
+    <!-- NUEVO VIDEO ARRIBA -->
+    <div class="video-top">
+      <iframe src="https://www.youtube.com/embed/yc_narOXOOY" allowfullscreen></iframe>
+    </div>
+
     <h1>DRAGON BALL Sparking! ZERO</h1>
     <p>↤ más juegos ➟</p>
+
   </div>
 
+  <!-- VIDEO DERECHO -->
   <div class="video">
     <iframe src="https://www.youtube.com/embed/IACXdUo7QLw" allowfullscreen></iframe>
   </div>
@@ -290,4 +314,3 @@ hr{
 
 </body>
 </html>
-
